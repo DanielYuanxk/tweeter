@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -15,6 +17,10 @@ html {
  */
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
@@ -23,3 +29,59 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+.container {
+  width: 90%;
+  background-color: #f4f1ec;
+}
+#tweetPost {
+  margin-top: 35px;
+}
+article {
+  padding: 10px;
+  border: #545149;
+  border: 3.5px solid;
+  margin-bottom: 30px;
+}
+article:hover {
+  box-shadow: 5px 10px #545149;
+}
+article header {
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+article header div {
+  display: flex;
+  align-items: flex-end;
+}
+
+article header i {
+  font-size: 2.5em;
+}
+.tweetText {
+  height: 4em;
+  padding: 10px;
+
+  padding-top: 30px;
+  border-bottom: 3px solid;
+}
+article footer {
+  height: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+.logos {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: #4056a1;
+}
+.logos i:hover {
+  color: #d1ae00;
+}

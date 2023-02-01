@@ -1,0 +1,12 @@
+.mainHeader {
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+
+  background-color: #d1ae00;
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+}
