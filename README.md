@@ -27,7 +27,7 @@ This repository is the starter code for the project: Students will fork and clon
 - AJAX for client side rendering.
 - Real time tweet updates.
 
-## Screen-shots
+## Screenshots
 
 !["desk-top view"] (https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.42.46%20PM.png)
 !["tablet view"] (https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.43.30%20PM.png)
