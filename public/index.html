@@ -3,7 +3,10 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <!-- External CSS -->
     <link
       rel="stylesheet"
@@ -40,6 +43,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
 
   <body>
@@ -53,51 +62,48 @@
         <i id="double-down" class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
-    <header class="mainHeader">
-      <div>
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div>
-        <h2>Daniel Yuan</h2>
-      </div>
-    </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form id="tweet-box" action="/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div class="container1">
-            <button type="submit" id="tbutton">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text" id="counter"
-              >140</output
-            >
-          </div>
-        </form>
-        <div id="tweetPost">
-          <article>
-            <header>
-              <div>
-                <i id="user" class="fa-solid fa-user-pen"></i>
-                <span>Charls</span>
-              </div>
-              <div><span>@Joey</span></div>
-            </header>
-            <div class="tweetText">Today was a fun day!</div>
-            <footer>
-              <span>2 days ago</span>
-              <div class="logos">
-                <i class="fa-solid fa-flag"></i>
-                <i class="fa-solid fa-retweet"></i>
-                <i class="fa-solid fa-heart"></i>
-              </div>
-            </footer>
-          </article>
+    <div class="notNav">
+      <header class="mainHeader">
+        <div>
+          <img src="/images/profile-hex.png" />
         </div>
-      </section>
-    </main>
+        <br />
+        <div>
+          <h2>Daniel Yuan</h2>
+        </div>
+      </header>
+
+      <!-- Page-specific (main) content here -->
+      <main class="container">
+        <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <div id="warning">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>Please do not exceed 140 characters!</span>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <div id="warning2">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>NO EMPTY TWEETS!</span>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <form id="tweet-box" action="/tweets" method="POST">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>
+            <div class="container1">
+              <button type="submit" id="tbutton">Tweet</button>
+              <output
+                name="counter"
+                class="counter"
+                for="tweet-text"
+                id="counter"
+                >140</output
+              >
+            </div>
+          </form>
+          <div id="tweetPost"></div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

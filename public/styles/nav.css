@@ -1,6 +1,7 @@
 nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 120px;
   background-color: #4056a1;
   color: #ffffff;

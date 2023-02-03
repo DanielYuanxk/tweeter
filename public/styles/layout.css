@@ -29,6 +29,13 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+.notNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f4f1ec;
+}
 .container {
   width: 90%;
   background-color: #f4f1ec;
@@ -37,6 +44,9 @@ body {
   margin-top: 35px;
 }
 article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   padding: 10px;
   border: #545149;
   border: 3.5px solid;
@@ -46,30 +56,39 @@ article:hover {
   box-shadow: 5px 10px #545149;
 }
 article header {
-  height: 3em;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-weight: lighter;
 }
 article header div {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
+
+  overflow-wrap: break-word;
+}
+article header div span {
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 article header i {
   font-size: 2.5em;
 }
 .tweetText {
-  height: 4em;
+  width: 100%;
   padding: 10px;
-
+  overflow-wrap: break-word;
   padding-top: 30px;
   border-bottom: 3px solid;
 }
 article footer {
   height: 2em;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -84,4 +103,36 @@ article footer {
 }
 .logos i:hover {
   color: #d1ae00;
+}
+#warning {
+  padding: 0.5em;
+  padding-left: 1.5em;
+  color: red;
+  border: red solid 3px;
+}
+#warning2 {
+  padding: 0.5em;
+  padding-left: 1.5em;
+  color: red;
+  border: red solid 3px;
+}
+@media screen and (min-width: 1204px) {
+  .notNav {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 140px;
+  }
+  .mainHeader {
+    padding-top: 0px !important;
+    margin-left: 10vmin;
+    margin-right: 10vmin;
+    width: 60vmin !important;
+    height: 50vmin !important;
+  }
+}
+@media screen and (max-width: 1204px) {
+  nav {
+    background-color: #ca9c26 !important;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png") !important;
+  }
 }
