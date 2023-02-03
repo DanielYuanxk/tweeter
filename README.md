@@ -29,8 +29,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["desk-top view"] (https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.42.46%20PM.png)
-!["tablet view"] (https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.43.30%20PM.png)
-!["warning for invalid input"] (https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.44.52%20PM.png)
-!["new tweet"] (https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.45.49%20PM.png)
-!["new tweet with animation when hovering"] (https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.46.51%20PM.png)
+!["desk-top view"](https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.42.46%20PM.png)
+!["tablet view"](https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.43.30%20PM.png)
+!["warning for invalid input"](https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.44.52%20PM.png)
+!["new tweet"](https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.45.49%20PM.png)
+!["new tweet with animation when hovering"](https://github.com/DanielYuanxk/tweetertemplate/blob/master/docs/Screenshot%202023-02-02%20at%209.46.51%20PM.png)
