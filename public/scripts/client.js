@@ -14,7 +14,8 @@ const createTweetElement = function (tweetObj) {
               <div><span>${tweetObj.user.handle}</span></div>
             </header>
           
-           <div class="tweetText">${$("<p>").text(tweetObj.content.text).html()}
+           <div class="tweetText">
+           ${$("<p>").text(tweetObj.content.text).html()}
              </div>
             
              <footer>
@@ -68,8 +69,9 @@ $(() => {
 
       const serialData = $("#tweet-text").serialize();
       $.post("/tweets", serialData, function (data) {
-        refatchTweets();
         $("#tweet-text").val("");
+        $("#counter").text("140");
+        refatchTweets();
       });
     }
   });
